@@ -20,10 +20,9 @@
 .rightbox {
     color: white;
     margin-top: 5px;
-
     background-color: #1D1D1D;
     width: 75vw;
-    height: 700px;
+    min-height: 669px;
     position: relative;
     overflow: hidden;
 }
@@ -51,7 +50,7 @@
 
 .library {
     color: white;
-    min-height: 72vh;
+    min-height: 74vh;
     font-weight: 700;
     padding: 20px 20px 0px 20px;
     position: relative;
@@ -95,7 +94,7 @@
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    padding:  24px 24px 10px 24px;
+    padding: 24px 24px 10px 24px;
 }
 
 .albums-card img {
@@ -110,11 +109,11 @@
 }
 
 .container_albums {
-    margin:  0px 30px 0px 30px;
+    margin: 0px 30px 0px 30px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-     
+
 }
 
 .playbtn {
@@ -134,7 +133,8 @@
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: bottom 0.3s ease, opacity 0.5s ease;
-    opacity: 0; /* Start with invisible */
+    opacity: 0;
+    /* Start with invisible */
 }
 
 .albums-card:hover .playbtn {
@@ -148,14 +148,18 @@
     width: 24px;
 }
 
-.playbar{
+.playbar {
     padding: 12px;
-    background-color: rgb(156, 157, 156);
-    width: 100%;
-    position: absolute;
+    filter: invert(1);
+    border-radius: 10px;
+    background-color: #dad5d5;
+    width: 70vw;
+    position: fixed;
     bottom: 30px;
+    height: 40px;
 }
-.songbutton{
+
+.songbutton {
     display: flex;
     justify-content: center;
     gap: 14px;
@@ -192,18 +196,22 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.songList{
+.songList {
     height: 355px;
     overflow: auto;
-    margin-bottom: 44px ;
+    margin-bottom: 44px;
 }
+
 .songList ul {
-    list-style-type: decimal; /* Displays list items in decimal format (1, 2, 3, ...) */
-    padding-left: 12px; /* Adds some space between the numbers and the text */
+    list-style-type: decimal;
+    /* Displays list items in decimal format (1, 2, 3, ...) */
+    padding-left: 12px;
+    /* Adds some space between the numbers and the text */
 }
 
 .songList li {
-    padding: 10px; /* Adds padding around each list item */
+    padding: 10px;
+    /* Adds padding around each list item */
     list-style-type: decimal;
     display: flex;
     gap: 12px;
@@ -216,18 +224,43 @@ footer a:hover {
     justify-content: space-between;
 }
 
-.songList .info{
+.songList .info {
     font-size: 12px;
 }
-.playnow{
+
+.playnow {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.playnow span{
+
+.playnow span {
     font-size: 15px;
     width: 64px;
     padding: 12px;
 
+}
+.playbarcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+.seekbar{
+    height: 2px;
+    width: 98%;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    margin: 6px;
+}
+.circleimg{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5s;
 }

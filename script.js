@@ -38,13 +38,9 @@ async function main() {
         </li>`;
     }
 
-    var audio = new Audio(songs[0]);
-    audio.play(); // Uncommented to play the audio
+  
 
-    audio.addEventListener("loadeddata", () => {
-        let duration = audio.duration;
-        console.log(audio.duration, audio.currentSrc, audio.currentTime);
-    });
+   
 }
 
 main();
